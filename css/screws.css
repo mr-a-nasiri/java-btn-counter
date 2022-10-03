@@ -1,0 +1,99 @@
+/* Screw Top Left */
+.screw-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9b9b9b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.screw-top-left::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  background-color: #9b9b9b;
+  width: 3px;
+  height: 40px;
+  overflow: hidden;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Screw Top right */
+.screw-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #9b9b9b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.screw-top-right::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  background-color: #9b9b9b;
+  width: 3px;
+  height: 40px;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Screw bottom Left */
+.screw-bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #9b9b9b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.screw-bottom-left::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  background-color: #9b9b9b;
+  width: 3px;
+  height: 40px;
+  overflow: hidden;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Screw bottom right */
+.screw-bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #9b9b9b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.screw-bottom-right::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  background-color: #9b9b9b;
+  width: 3px;
+  height: 40px;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}

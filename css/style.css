@@ -1,0 +1,139 @@
+@import url(screws.css);
+
+@font-face {
+  font-family: CursedTimerUlil-Aznm;
+  src: url("/CursedTimerUlil-Aznm.ttf");
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Counter Body*/
+#counter-body {
+  position: relative;
+  height: 80vh;
+  width: 400px;
+  background: linear-gradient(
+    to bottom,
+    #bcc6cca9,
+    rgba(238, 238, 238, 0.842),
+    #bcc6cca9
+  );
+  border-radius: 40px;
+}
+
+/* Monitor */
+#monitor {
+  margin: 20% auto 0 auto;
+  height: 30%;
+  width: 60%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px ridge #bcc6cca9;
+  font-family: CursedTimerUlil-Aznm;
+}
+#monitor #count-el {
+  margin: auto;
+}
+/* Monitor Bottom */
+.monitor-bottom {
+  width: 100%;
+  height: 30%;
+  background: darkgray;
+  border-top: 5px ridge #bcc6cca9;
+  font-size: 16px;
+  padding: 0.75rem;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Plus Button */
+.plus-button {
+  position: relative;
+  margin: 10% auto 0 auto;
+  color: darkgray;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.plus-button:active {
+  width: 95px;
+  height: 95px;
+}
+
+.plus-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  font-size: 18px;
+  width: 100%;
+  height: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.plus-button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  font-size: 18px;
+  width: 20px;
+  height: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Save Button */
+.save-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0%);
+  color: #333;
+  font-size: 150%;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.save-button h2 {
+  text-shadow: 0 0 3px #bcc6cca9, 0 0 5px #bcc6cca9;
+}
+
+.save-button:active {
+  width: 95px;
+  height: 95px;
+}
